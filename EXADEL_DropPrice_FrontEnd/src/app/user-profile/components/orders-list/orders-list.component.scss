@@ -1,0 +1,41 @@
+@import "src/variables";
+
+:host {
+  width: 100%;
+}
+
+.orders-list {
+  background: $main_header_txtColor;
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  overflow: hidden;
+
+  .orders-list__header{
+    background: $mat-panel-header-color;
+    color: $main_header_txtColor;
+    padding: 0 1.8em;
+    text-align: center;
+    margin: 0;
+  }
+
+  li {
+    &:nth-child(2n) {
+      background: #f5f4f5;
+    }
+  }
+
+  ::ng-deep .mat-expansion-panel-body {
+    padding: 0;
+  } 
+  
+  ::ng-deep .mat-expansion-panel-header-title {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: $main_header_txtColor;
+  }
+
+  .mat-expansion-panel-header:hover {
+    background: $main-gray;
+  } 
+}

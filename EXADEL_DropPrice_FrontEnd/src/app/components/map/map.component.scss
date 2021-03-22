@@ -1,0 +1,51 @@
+@import "../../../variables";
+
+.map-wrapper{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+
+  @media screen and (max-width: 660px) {
+    button{
+      font-size: small;
+    }
+}
+
+mat-dialog-actions{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+
+  .map__form {
+    font-size: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .action__add-point {
+    background-color: $indigo;
+
+    &:hover, &:active, &:focus {
+      opacity: .9;
+    }
+  }
+}
+
+  agm-map{
+    height: 600px;
+    width: 100%;
+  }
+
+  mat-icon{
+    cursor: pointer;
+  }
+
+}
+

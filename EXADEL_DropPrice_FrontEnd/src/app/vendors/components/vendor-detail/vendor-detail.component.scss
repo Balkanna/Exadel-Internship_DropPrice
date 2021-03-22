@@ -1,0 +1,238 @@
+@import "src/variables";
+
+* {
+  color: $main_black;
+}
+
+.vendors {
+
+  margin-top: 20px;
+
+  .go_back_main {
+    margin: 20px 0;
+
+    .go-back__link_text {
+      font-weight: 500;
+    }
+  }
+
+  .go-back__link .go-back__link_icon {
+    color: $main_black;
+  }
+
+  .vendors-label {
+    margin-right: .5em;
+
+    &__vendor-name {
+      font-size: 1.7rem;
+      font-weight: 700;
+
+      @media screen and (max-width: 680px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+    }
+
+    .rating {
+      &__amount {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $main_black;
+      }
+
+      &__icon {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  .vendors-detail {
+    font-size: 1rem;
+
+    &_label {
+      font-size: 1.1em;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    &__actions {
+      mat-icon {
+        position: relative;
+        top: 32%;
+      }
+
+      mat-icon:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &__header {
+
+      padding: 2em 1em 1em;
+
+      &_title {
+        margin: 0;
+        font-size: 1.3em;
+      }
+
+      .rating {
+        &__amount {
+          font-size: 1.5em;
+          font-weight: 500;
+          color: $gray_text_color;
+        }
+      }
+
+      @media screen and (min-width: 767.98px) {
+
+        grid-column: 1/2;
+
+      }
+    }
+
+    .vendor-content {
+
+      &__social-field {
+        margin-top: .4em;
+
+        :hover {
+          opacity: 0.8;
+        }
+      }
+
+      &__field-description {
+        font-size: 1rem;
+        font-weight: 500;
+
+        @media screen and (max-width: 680px) {
+          font-size: .9rem;
+        }
+      }
+
+      &__field-label {
+        flex: 1 1 100%;
+        box-sizing: border-box;
+        max-width: 30%;
+        margin-right: 20px;
+
+        @media screen and (max-width: 960px) {
+          max-width: 40%;
+        }
+
+        @media screen and (max-width: 680px) {
+          max-width: 72%;
+          font-size: .9rem;
+
+          mat-icon {
+            display: none;
+          }
+        }
+      }
+
+      &__field-label-text {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.7;
+        margin-left: 0.3em;
+
+        @media screen and (max-width: 680px) {
+          font-size: .9rem;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+
+      &__field-text {
+        flex: 1 1 100%;
+        max-width: 65%;
+        box-sizing: border-box;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.7;
+
+        @media screen and (max-width: 680px) {
+          font-size: .9rem;
+          max-width: 95%;
+        }
+      }
+    }
+
+    mat-divider {
+      margin-bottom: 1em;
+    }
+
+    .mat-expansion-panel {
+      padding: 1rem;
+    }
+
+    .mat-expansion-panel-header {
+      margin: 1.5em 0 1.5em 0;
+    }
+
+    .mat-expansion-panel-header-description {
+      flex-grow: 0;
+      margin-right: 8px;
+    }
+
+    .rating__icon {
+      margin-bottom: .1em;
+
+      @media screen and (max-width: 400px) {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+
+    .vendors-discounts {
+      .vendor_details__tabs{
+        .mat-tab-labels{
+          justify-content: flex-start;
+        }
+      }
+      @media screen and (min-width: 767.98px) {
+
+        grid-column: 2/3;
+
+        @media screen and (min-width: 927.98px) {
+
+          grid-column: 2/4;
+
+        }
+      }
+    }
+
+    @media screen and (min-width: 767.98px) {
+
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+
+      @media screen and (min-width: 927.98px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  .admin-dashboard {
+    padding-top: 2rem;
+  }
+
+  .mat-tab-labels {
+    display: flex;
+    justify-content: center;
+  }
+
+  mat-tab-group {
+    padding-top: 1em;
+  }
+
+  mat-icon {
+    width: 24px;
+    color: #3F51B5;
+  }
+}

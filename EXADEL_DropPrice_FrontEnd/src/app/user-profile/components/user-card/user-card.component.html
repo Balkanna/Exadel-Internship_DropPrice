@@ -1,0 +1,55 @@
+<mat-accordion class="user-profile">
+  <mat-expansion-panel (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false" [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-card-header class="user-profile-header">
+          <mat-card-title class="user-profile-header__user-name">{{ activeUser.fio }}</mat-card-title>
+        </mat-card-header>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="user-profile-card__content">
+      <ul class="user-profile-card__content_list">
+        <li class="user-profile-card__content_field" 
+            fxLayout="row" 
+            fxLayoutGap="1em" 
+            fxLayoutGap.xs=".2em">
+          <p fxLayout="row">
+            <mat-icon class="user-profile-card__content_icon">business</mat-icon>
+            <span class="user-profile-card__content_label office">{{ "USER_PROFILE.USER_CARD.OFFICE_LOCATION" | translate }}:</span>
+          </p>
+          <p>
+            <span class="user-profile-card__content_text">{{ activeUser.office }}</span>
+          </p>
+      </li>
+   
+      <li class="user-profile-card__content_field" 
+          fxLayout="row" 
+          fxLayoutGap="1em" 
+          fxLayoutGap.xs=".2em">
+        <p fxLayout="row">
+          <mat-icon class="user-profile-card__content_icon">phone</mat-icon>
+          <span class="user-profile-card__content_label phone">{{ "USER_PROFILE.USER_CARD.USER_PHONE" | translate }}:</span>
+        </p>
+        <p>
+          <span class="user-profile-card__content_text">{{ activeUser.phone }}</span>
+        </p>
+      </li>
+
+      <li class="user-profile-card__content_field" 
+          fxLayout="row" 
+          fxLayoutGap="1em" 
+          fxLayoutGap.xs=".2em">
+        <p fxLayout="row">
+          <mat-icon class="user-profile-card__content_icon">mail_outline</mat-icon>
+          <span class="user-profile-card__content_label">{{ "USER_PROFILE.USER_CARD.USER_EMAIL" | translate }}:</span>
+        </p>
+        <p>
+          <span class="user-profile-card__content_text">{{ activeUser.email }}</span>
+        </p> 
+      </li>
+      </ul>
+    </mat-card-content>
+  </mat-expansion-panel>
+</mat-accordion>

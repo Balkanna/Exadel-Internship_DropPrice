@@ -1,0 +1,125 @@
+<div class="shadow">
+  <div class="ticket">
+    <div class="ticket-content" >
+      <img class="logo-img" src="./assets/img/logo-company.png" alt="logo">
+      <h2 class= "ticket-title" fxLayoutAlign="center center">{{ "TICKET.TITLE" | translate }}</h2>
+      <div class="ticket-content__dotted-line"></div>
+      <div class="ticket-detail__content">
+        <ul class="content">
+          <li class="ticket-content__field" 
+              fxLayout="row" 
+              fxLayoutAlign="space-between">
+            <p class="ticket-info__label">
+              {{ "TICKET.FIRST_NAME" | translate }}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.firstName }}
+            </p>
+          </li>
+          <li class="ticket-content__field" 
+              fxLayout="row" 
+              fxLayoutAlign="space-between">
+            <p class="ticket-info__label">
+              {{ "TICKET.LAST_NAME" | translate }}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.lastName }}
+            </p>
+          </li>
+          <li class="ticket-content__field" 
+              fxLayout="row" 
+              fxLayoutAlign="space-between"
+              *ngIf="ticket?.patronymic">
+            <p class="ticket-info__label">
+              {{ "TICKET.PATRONYMIC" | translate }}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.patronymic }}
+            </p>
+          </li>
+          <div class="ticket-content__dotted-line"></div>
+          <li class="ticket-content__field" 
+              fxLayout="row" 
+              fxLayoutAlign="space-between">
+            <p class="ticket-info__label">
+              {{ "TICKET.PRODUCT_SERVICE" | translate}}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.discountName }}
+            </p>
+          </li>
+          <li class="ticket-content__field" 
+              fxLayout="row"  
+              fxLayoutAlign="space-between">
+            <p class="ticket-info__label">
+              {{ "TICKET.NAME_VENDOR" | translate }}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.vendorName }}
+            </p>
+          </li>
+          <li class="ticket-content__field" 
+              fxLayout="row" 
+              fxLayoutAlign="space-between">
+            <p class="ticket-info__label">
+              {{ "TICKET.EMAIL" | translate }}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.vendorEmail }}
+            </p>
+          </li>
+          <li class="ticket-content__field" 
+              fxLayout="row"  
+              fxLayoutAlign="space-between">
+            <p class="ticket-info__label">
+              {{ "TICKET.PHONE" | translate }}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.vendorPhone }}
+            </p>
+          </li>
+          <li class="ticket-content__field" 
+              fxLayout="row" 
+              fxLayoutAlign="space-between">
+            <p class="ticket-info__label">
+              {{ "TICKET.CONFIRMATION_DATE" | translate }}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.orderDate | date: "dd.MM.yyyy"}}
+            </p>
+          </li>
+          <li *ngIf="ticket?.promoCode" 
+              class="ticket-content__field" 
+              fxLayout="row" 
+              fxLayoutAlign="space-between">
+            <p class="ticket-info__label">
+              {{ "TICKET.PROMO_CODE" | translate}}:
+            </p>
+            <p class="ticket-info__field">
+              {{ ticket?.promoCode }}
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="ticket-discount"
+           fxLayout="row"
+           fxLayoutAlign="space-between">
+        <p class="ticket-info__label">{{ "TICKET.DISCOUNT" | translate}}:</p>
+        <p class="discount-amount">{{ ticket?.discountAmount }}%</p>
+      </div>
+      <div class="ticket-content__dotted-line"></div>
+    </div>
+    <div mat-dialog-actions 
+         fxLayout="row" 
+         fxLayoutAlign="center center">
+      <button mat-stroked-button
+              (click)="back()">
+        {{ "TICKET.CLOSE" | translate }}
+      </button>
+    </div>
+    <mat-icon class="close-ticket" 
+              (click)="back()"
+              matTooltip='{{ "TICKET.CLOSE" | translate}}'>close
+    </mat-icon>
+  </div>
+</div>

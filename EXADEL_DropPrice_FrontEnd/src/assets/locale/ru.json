@@ -1,0 +1,243 @@
+{
+  "COMMON": {
+    "WINDOW_CONFIRM": "У вас есть несохраненные изменения. Вы уверены, что хотите выйти?"
+  },
+  "LANGUAGES": {
+    "EN": "Английский",
+    "RU": "Русский",
+    "TITLE": "Изменить язык"
+  },
+  "BUTTON": {
+    "LOGOUT": "Выход"
+  },
+  "HEADER": {
+    "SELECTOR_TITLE": "Язык",
+    "ADMIN_PANEL_LINK_TITLE": "Панель администратора",
+    "MODERATOR_PANEL_LINK_TITLE": "Добавить",
+    "USER_PROFILE": "Мой профиль",
+    "CHANGE_LANGUAGE": "Изменить язык",
+    "LOG_OUT": "Выйти"
+  },
+  "LOGIN": {
+    "TITLE": "Вход",
+    "BTN_TITLE": "Войти",
+    "EMAIL_LABEL": "Введите электронный адрес*",
+    "VALID_EMAIL": "Неверный формат электронного адреса",
+    "PASSWORD_LABEL": "Введите пароль*",
+    "PASS_ERR_LENGTH": "Пароль должен содержать минимум 8 символов",
+    "STRONG_PASS": "Пароль должен содержать заглавные и строчные буквы, цифры",
+    "HIDE": "Скрыть пароль"
+  },
+  "MAIN_PAGE": {
+    "SEARCH": "Поиск",
+    "BUTTONS": {
+      "TICKET": "Получить скидку",
+      "DISCOUNT_INACTIVE": "Скидка не доступна"
+    },
+    "FILTER": {
+      "SORT_BY": {
+        "TITLE": "сортировать по",
+        "DISCOUNT_RATING_ASC": {
+          "NAME": "Рейтинг - по возрастанию"
+        },
+        "DISCOUNT_RATING_DESC": {
+          "NAME": "Рейтинг - по убыванию"
+        },
+        "DISTANCE_ASC": {
+          "NAME": "Расстояние - по возрастанию"
+        },
+        "DISTANCE_DESC": {
+          "NAME": "Расстояние - по убыванию"
+        },
+        "ALPHABET_ASC": {
+          "NAME": "Алфавит - А до Я"
+        },
+        "ALPHABET_DESC": {
+          "NAME": "Алфавит - Я до А"
+        }
+      },
+      "LOCATION_SORT": {
+        "TITLE": "локация",
+        "CURRENT":"Моё местоположение",
+        "OFFICE":"Мой офис"
+      }
+    },
+    "DISCOUNT_CARD": {
+      "DISTANCE": " от вас",
+      "TOOLTIP_VENDOR": "Подробнее о вендоре",
+      "TOOLTIP_FAVORITE": "Добавить в избранные",
+      "TOOLTIP_DISCOUNT": "Подробнее о скидке",
+      "TOOLTIP_RATING": "Рейтинг скидки"
+    }
+  },
+  "NOT_FOUND": {
+    "HIGHLIGHTER_TEXT": "Похоже, вы потерялись,",
+    "TEXT": "страница, которую вы ищете, недоступна!",
+    "BUTTON": "Перейти на главную"
+  },
+  "MODERATOR_DASHBOARD": {
+    "NEW_VENDOR_FORM": "Форма добавления вендора",
+    "NEW_DISCOUNT_FORM": "Форма добавления скидки"
+  },
+  "NEW_VENDOR_FORM": {
+    "NAME_LABEL": "Наименование вендора*",
+    "ADDRESS_LABEL": "Адрес вендора",
+    "ADDRESS_PLACEHOLDER": "Например: г.Минск, ул.Ольшевского,11-4",
+    "DESCRIPTION": "Описание вендора",
+    "PHONE_NUMBER": "Телефон вендора*",
+    "VALID_PHONE": "Телефон в формате, например: +375 25 123 45 76 или 8029 123 45 67",
+    "EMAIL_LABEL": "Электронный адрес вендора*",
+    "VALID_EMAIL": "Неверный формат электронного адреса",
+    "WEBSITE_LABEL": "Веб-сайт",
+    "OTHER_SOCIAL_NETWORK_LABEL": "Другие соц. сети вендора",
+    "VALID_SOCIAL_NETWORK": "Неверный aдрес ссылки",
+    "BTN_TITLE": "Сохранить"
+  },
+  "TICKET": {
+    "TITLE": "Талон",
+    "FIRST_NAME": "Фамилия",
+    "LAST_NAME": "Имя",
+    "PATRONYMIC": "Отчество",
+    "NAME_VENDOR": "Наименование вендора",
+    "PRODUCT_SERVICE": "Товар/услуга",
+    "EMAIL": "Электронная почта",
+    "PHONE": "Контактный телефон",
+    "PROMO_CODE": "Промокод",
+    "DISCOUNT": "Скидка",
+    "CONFIRMATION_DATE": "Дата подтверждения",
+    "CLOSE": "Закрыть"
+  },
+  "NEW_DISCOUNT_FORM": {
+    "NAME_VENDOR": "Наименование вендора*",
+    "NAME_VENDOR_ERROR": "Выберите наименование вендора из доступных вариантов*",
+    "PRODUCT_SERVICE": "Наименование товара/услуги*",
+    "DESCRIPTION": "Описание скидки",
+    "AMOUNT_DISCOUNT": "Размер скидки*",
+    "DISCOUNT_VALIDITY_DATE": "Дата действия скидки*",
+    "PROMO_CODE": "Промокод",
+    "LABEL_TAGS": "Теги*",
+    "BTN_TITLE": "Сохранить",
+    "PLACEHOLDER_VENDOR_NAME": "Введите наименование вендора",
+    "PLACEHOLDER_PRODUCT_SERVICE": "Введите наименование товара/услуги",
+    "PLACEHOLDER_DESCRIPTION": "Введите описание",
+    "PLACEHOLDER_PERCENT": "Укажите процент",
+    "PLACEHOLDER_PROMO_CODE": "Введите промокод",
+    "PLACEHOLDER_START_DATE": "начало",
+    "PLACEHOLDER_END_DATE": "окончание",
+    "PLACEHOLDER_NEW_TAG": "Введите тег и нажмите 'Enter'",
+    "DATE_START_END": "Cрок действия скидки*",
+    "START_DATE_ERROR": "Невернная дата начала",
+    "END_DATE_ERROR": "Неверная дата окончания",
+    "MIN_MAX_PERCENT": "Диапазон",
+    "ACTIVITY_STATUS": "Активность скидки",
+    "NAME_LABEL": "Введите название места*",
+    "ADDRESS_LABEL": "Введите адрес места*",
+    "ADDRESS_PLACEHOLDER": "Напр.: г. Минск, ул. Ольшевского, 11-4",
+    "POINTS_TITLE": "Нажмите для добавления данных локации:",
+    "ADD_LOCATION": "Добавить локацию",
+    "OPEN_MAP": "Открыть карту",
+    "DELETE_LOCATION": "Удалить локацию",
+    "EMPTYCOORDINATES": "Пожалуйста, поставьте точку на карте, для этого нажмите значок добавления местоположения",
+    "EMPTY_COORDINATES_POINT": "Необходимо выбрать точку продаж",
+    "EDIT_SESSION_DISCOUNT_ARCHIVED": "Скидка архивирована",
+    "EDIT_SESSION_DISCOUNT_AVAILABLE": "Скидка доступна",
+    "SUCCESS_SAVE_SNACKBAR": "Успешно сохранено!",
+    "ERROR_SAVE_SNACKBAR": "Упс! Изменения не были сохранены, попробуйте еще раз",
+    "ERROR_UPDATE_SNACKBAR": "Упс! Не получилось обновить данные, попробуйте еще раз",
+    "SUCCESS_UPDATE_SNACKBAR": "Данные успешно обновлены!"
+  },
+  "UNSAVED_CHANGES": "У вас есть несохраненные изменения. Вы уверены, что хотите уйти?",
+  "MAP": {
+    "ADD_POINT_BTN": "Добавить точку локации"
+  },
+  "DISCOUNT_DETAIL": {
+    "AMOUNT_LABEL": "Скидка",
+    "PROMO_CODE_LABEL": "Промокод",
+    "ADDRESS_LABEL": "Адрес",
+    "DISTANCE": "Расстояние от вас",
+    "DATES_LABEL": "Срок действия скидки",
+    "ASSESSMENT_LABEL": "Оценить",
+    "EDIT_BUTTON_LABEL": "Редактировать",
+    "ARCHIVE_BUTTON_LABEL": "Архивировать",
+    "TICKET_BUTTON_LABEL": "Получить скидку",
+    "TICKET_BUTTON_LABEL_DISCOUNT_INACTIVE": "Скидка не доступна",
+    "MAT_TAB_ABOUT": "О скидке",
+    "MAT_TAB_POINTS_OF_SALE": "Карта местоположения скидки",
+    "TOOLTIP_GO_BACK": "Вернуться к списку",
+    "TOOLTIP_VENDOR": "Вендор",
+    "TOOLTIP_FAVORITES": "Добавить в избранные",
+    "TOOLTIP_VENDOR_RAT": "Рейтинг вендора"
+  },
+  "VENDOR_PAGE": {
+    "TOOLTIP_GO_BACK": "Вернуться",
+    "VENDOR_DETAIL": {
+      "DETAIL_RATING_LABEL": "Рейтинг вендора",
+      "DETAIL_CONTENT": {
+        "VENDOR_NAME": "Наименование вендора",
+        "VENDOR_DESCRIPTION": "Описание",
+        "VENDOR_ADDRESS": "Адрес",
+        "VENDOR_EMAIL": "Электронная почта",
+        "VENDOR_PHONE": "Контактный телефон",
+        "VENDOR_EDIT": "Редактировать вендора"
+      },
+      "MAT_TAB_VENDOR_DISCOUNTS": "Скидки вендора",
+      "MAT_TAB_VENDOR_POINTS_OF_SALES": "Карта точек продаж вендора",
+      "DETAIL_ACTIONS": {
+        "EDIT": "Редактировать"
+      }
+    }
+  },
+  "BUTTON_BACK_LOCATION": "назад",
+  "ADMIN_DASHBOARD": {
+    "SETTINGS_TITLE": "Изменить",
+    "DISCOUNT_LABEL": "Статистика по скидкам",
+    "VENDOR_LABEL": "Статистика по вендорам",
+    "SETTINGS_LABEL": "Настройки",
+
+    "SORT": {
+      "LABEL": {
+        "RATING": "Сортировать по рейтингу",
+        "TICKET": "Сортировать по количеству талонов"
+      },
+      "ASC": "по возрастанию",
+      "DESC": "по убыванию"
+    },
+    "STATS": {
+      "TABLE": {
+        "NAME": "Название",
+          "RATING": "Рейтинг",
+        "TICKETS": "Кол-во талонов",
+        "EMAIL": "Электронная почта"
+      }
+    },
+    "SEARCH": {
+      "SEARCH_BY": "Искать по"
+    },
+    "CONTENT": ""
+  },
+  "USER_PROFILE": {
+    "USER_CARD": {
+      "OFFICE_LOCATION": "Офис",
+      "USER_PHONE": "Tелефон",
+      "USER_EMAIL": "Эл. почта"
+    },
+    "LIST_TITLE": {
+      "SAVED": "Избранные скидки",
+      "ORDERED": "История заказов"
+    },
+    "LIST_ITEM": {
+      "DATE_BEFORE": "до",
+      "DATE_ORDER": "заказан",
+      "TOOLTIP_DISCOUNT": "Подробнее о скидке",
+      "TOOLTIP_VENDOR": "Подробнее о вендоре",
+      "TOOLTIP_FAVORITE": "Переключить избранное"
+    },
+    "TICKET_BUTTON": {
+      "TICKET_LABEL": "Получить скидку",
+      "SHOW_TICKET": "Показать талон",
+      "ORDER_TICKET": "Заказать талон",
+      "DISCOUNT_INACTIVE": "Скидка не доступна",
+      "TOOLTIP_TICKET": "Талон"
+    }
+  }
+}

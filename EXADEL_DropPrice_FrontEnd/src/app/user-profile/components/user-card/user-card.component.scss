@@ -1,0 +1,98 @@
+@import "src/variables";
+
+:host {
+  width: 100%;
+}
+
+.user-profile-header__user-name {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-left: 0;
+
+  @media screen and (max-width: 980px) {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.2em;
+  }
+}
+
+.user-profile-card {
+  font-size: 1rem;
+  background: $main_header_txtColor;
+  width: 100%;
+  height: auto;
+  color: #313237;
+
+  &__content {
+    &_field {
+
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    &_list {
+      margin-top: 1em;
+
+      li > P {
+        flex: 1 1 100%;
+        box-sizing: border-box;
+        max-width: 20%;
+
+        @media screen and (max-width: 980px) {
+          max-width: 30%;
+        }
+
+        @media screen and (max-width: 480px) {
+          max-width: 30%;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    &_label {
+      line-height: 1.7;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-left: .3em;
+
+      @media screen and (max-width: 980px) {
+        font-weight: 500;
+      
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 0.9rem;
+        margin-left: 0;
+      }
+    }
+
+    &_text {
+      
+      flex: 1 1 100%;
+      box-sizing: border-box;
+      max-width: 25%;
+
+      @media screen and (max-width: 600px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    &_icon {
+      color: $indigo; 
+      opacity: 0.85;
+      @media screen and (max-width: 480px) {
+        display: none;
+        width: 18px;
+        margin-right: .3em;
+      } 
+    }
+  }
+}

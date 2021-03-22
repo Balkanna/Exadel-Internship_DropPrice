@@ -1,0 +1,15 @@
+<section class="search-bar">
+    <app-search
+      (onEmitSearchTerm)="searchTermChange($event)"
+      [initialValue$]="initialValue$"
+    >
+    </app-search>
+    <app-tags-filter
+      [tags$]="tags$"
+      [activeTags$]="activeTags$"
+      (chipSelected)="searchTagChange($event)"
+    >
+    </app-tags-filter>
+</section>
+
+

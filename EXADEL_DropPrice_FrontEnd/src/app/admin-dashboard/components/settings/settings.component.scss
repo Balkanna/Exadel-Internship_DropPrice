@@ -1,0 +1,26 @@
+@import "src/variables";
+
+.settings {
+  font-size: 1rem;
+  padding: 1rem 0;
+  color: $main_black;
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem;
+
+
+    > article {
+      display: flex;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    position: static;
+    //width: 100%;
+  }
+}
